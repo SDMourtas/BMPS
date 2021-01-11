@@ -44,4 +44,4 @@ After running the Main_BMPS.m file, the package outputs are the following:
 *	The graphic illustration of the average price of the objected function as well as the optimal portfolios expected return and variance.
 
 # Environment
-The BMVPS package has been tested in Matlab 2018b on OS: Windows 10 64-bit.
+The BMPS package has been tested in Matlab 2018b on OS: Windows 10 64-bit.
