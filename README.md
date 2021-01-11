@@ -12,7 +12,7 @@ Also, the package includes the following three Matlab functions for comparison p
 *	Seyedali Mirjalili (2021). Binary Bat Algorithm (https://www.mathworks.com/matlabcentral/fileexchange/44707-binary-bat-algorithm), MATLAB Central File Exchange. Retrieved January 9, 2021.
 *	Yarpiz (2021). Binary and Real-Coded Genetic Algorithms (https://www.mathworks.com/matlabcentral/fileexchange/52856-binary-and-real-coded-genetic-algorithms), MATLAB Central File Exchange. Retrieved January 9, 2021.
 Note that these functions have been appropriately modified for the BMVPS problem. Also, more information about these algorithms can be found in https://yarpiz.com/, and http://www.alimirjalili.com. 
-#M-files Description
+# M-files Description
 *	Main_BMPS.m: the main function and parameters declaration
 *	BMPS.m: problem setup and main procedure
 *	problem.m: complementary function for the problem setup
@@ -32,16 +32,16 @@ Note that these functions have been appropriately modified for the BMVPS problem
 *	SinglePointCrossover.m: complementary function of the bga algorithm
 *	Mutate.m: complementary function of the bga algorithm
 
-#Installation
+# Installation
 *	Unzip the file you just downloaded and copy the BMPS directory to a location,e.g.,/my-directory/
 *	Run Matlab/ Octave, Go to /my-directory/BMPS/ at the command prompt
 *	run 'Main_BMPS' (Matlab/Octave)
 
-#Results
+# Results
 After running the Main_BMPS.m file, the package outputs are the following:
 *	The optimal portfolio of BMPS problem created by VSBAS, BBAS, BBA and BPSO.
 *	The time consumptions of VSBAS, BBAS, BBA and BPSO.
 *	The graphic illustration of the average price of the objected function as well as the optimal portfolios expected return and variance.
 
-#Environment
+# Environment
 The BMVPS package has been tested in Matlab 2018b on OS: Windows 10 64-bit.
