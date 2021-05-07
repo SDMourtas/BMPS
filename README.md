@@ -16,6 +16,7 @@ Note that these functions have been appropriately modified for the BMVPS problem
 *	Main_BMPS.m: the main function and parameters declaration
 *	BMPS.m: problem setup and main procedure
 *	problem.m: complementary function for the problem setup
+*	example.m: complementary function for the portfolio case selection
 *	objfun.m: objective function of the problem
 *	MyCost.m: objective function of the problem used by ABC, DE and SMA algorithms
 *	penfun.m: objective function of the problem plus the penalty value
