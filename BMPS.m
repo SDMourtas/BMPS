@@ -3,7 +3,7 @@
 %
 % by S.D.Mourtas, V.N.Katsikis
 % ======================================================== %
-function [t,xvsbas,xbbas,xbba,xbga,xvpso]=BMPS(X,s,xp,K)
+function [t,xvsbas,xbbas,xbba,xbga,xvpso]=BMPS(X,s,xp,K,x)
 
 % Xm and Xc construction
 [m,n]=size(X);tot=m-s;
@@ -103,28 +103,37 @@ end
 
 figure
 plot(t,erxvsbas);hold on
-plot(t,erxbbas,'-.')
-plot(t,erxbba)
-plot(t,erxbga,':')
-plot(t,erxvpso,':')
-plot(t,B,'k')
-ylabel('Portfolios Expected Returns')
-xlabel('Time')
-xticks([0 19 41 62 82])
-xticklabels({'3/2','2/3','1/4','1/5','1/6'})
+plot(t,erxbbas,'-.');plot(t,erxbba)
+plot(t,erxbga,':');plot(t,erxvpso,':');plot(t,B,'k')
+ylabel('Portfolios Expected Returns');xlabel('Time')
+if x==1
+    xticks([0 42 84 126 168 210 253])
+    xticklabels({'2/1','4/3','4/5','2/7','1/9','30/10','4/1'})
+elseif x==2
+    xticks([0 42 84 126 168 210 256])
+    xticklabels({'1/4','3/6','31/7','29/9','26/11','27/1','1/4'})
+else
+    xticks([0 19 41 62 82])
+    xticklabels({'3/2','2/3','1/4','1/5','1/6'})
+end
 legend('VSBAS','BBAS','BBA','BGA','VPSO','Target price')
 hold off
 
 figure
 plot(t,varxvsbas);hold on
-plot(t,varxbbas,'-.')
-plot(t,varxbba)
-plot(t,varxbga,':')
-plot(t,varxvpso,':')
-ylabel('Variance')
-xlabel('Time')
-xticks([0 19 41 62 82])
-xticklabels({'3/2','2/3','1/4','1/5','1/6'})
+plot(t,varxbbas,'-.');plot(t,varxbba)
+plot(t,varxbga,':');plot(t,varxvpso,':');
+ylabel('Variance');xlabel('Time')
+if x==1
+    xticks([0 42 84 126 168 210 253])
+    xticklabels({'2/1','4/3','4/5','2/7','1/9','30/10','4/1'})
+elseif x==2
+    xticks([0 42 84 126 168 210 256])
+    xticklabels({'1/4','3/6','31/7','29/9','26/11','27/1','1/4'})
+else
+    xticks([0 19 41 62 82])
+    xticklabels({'3/2','2/3','1/4','1/5','1/6'})
+end
 legend('VSBAS','BBAS','BBA','BGA','VPSO')
 hold off
 
@@ -134,10 +143,17 @@ plot(t,abs(fbbas-varxbbas),'-.')
 plot(t,abs(fbba-varxbba))
 plot(t,abs(fbba-varxbga),':')
 plot(t,abs(fvpso-varxvpso),':')
-ylabel('Transaction Costs')
-xlabel('Time')
-xticks([0 19 41 62 82])
-xticklabels({'3/2','2/3','1/4','1/5','1/6'})
+ylabel('Transaction Costs');xlabel('Time')
+if x==1
+    xticks([0 42 84 126 168 210 253])
+    xticklabels({'2/1','4/3','4/5','2/7','1/9','30/10','4/1'})
+elseif x==2
+    xticks([0 42 84 126 168 210 256])
+    xticklabels({'1/4','3/6','31/7','29/9','26/11','27/1','1/4'})
+else
+    xticks([0 19 41 62 82])
+    xticklabels({'3/2','2/3','1/4','1/5','1/6'})
+end
 legend('VSBAS','BBAS','BBA','BGA','VPSO')
 hold off
 
@@ -146,7 +162,7 @@ Y=[mean(fvsbas);mean(fbbas);mean(fbba);mean(fbga);mean(fvpso)];
 bar(Y);
 text(1:length(Y),Y,num2str(Y),'vert','bottom','horiz','center'); 
 box off
-ylabel('Average Transaction Costs + Variance')
+ylabel('Average Price of Obj. Func.')
 xlabel('Portfolio')
 xticklabels({'VSBAS','BBAS','BBA','BGA','VPSO'})
 hold off
