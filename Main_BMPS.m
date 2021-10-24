@@ -10,7 +10,7 @@
 %                                                                   %
 %   Main paper: S.D.Mourtas, V.N.Katsikis,                          %
 %               "V-Shaped BAS: Applications on large portfolios     %
-%               selection problem," (submitted)                     %
+%               selection problem," Computational Economics (2021)  %
 %                                                                   %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
