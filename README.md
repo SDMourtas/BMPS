@@ -1,7 +1,7 @@
 # Binary Markowitz-based Portfolio Selection
 The Markowitz mean-variance portfolio selection is widely acclaimed as a very important investment strategy. The binary Markowitz-based portfolio selection (BMPS) problem is a binary version of the original mean-variance portfolio selection problem introduced by Markowitz. Furthermore, a cardinality limit on the BMPS problem has been set to prevent over-diversification. Note that BMPS is an integer linear programming problem.\
 The purpose of this package is to solve online the BMPS problem by using a V-shaped transfer function-based of the binary Beetle Antennae Search (VSBAS). Several algorithms from the literature are currently implemented, based on the available literature and our understanding. More precisely, the main articles used are the followings:
-*	S.D.Mourtas, V.N.Katsikis, "V-Shaped BAS: Applications on large portfolios selection problem," (submitted)
+*	S.D.Mourtas, V.N.Katsikis, "V-Shaped BAS: Applications on large portfolios selection problem," Computational Economics (2021)
 *	M.A. Medvedeva, V.N. Katsikis, S.D. Mourtas, T.E. Simos, "Randomized time-varying knapsack problems via binary beetle antennae search algorithm: Emphasis on applications in portfolio insurance," Math Meth Appl Sci, pp. 1-11, 2020.
 *	K. Deb, Optimization for Engineering Design: Algorithms and Examples. PHI, second ed., July 2013.
 *	X.S. Yang, Nature-inspired optimization algorithms. Elsevier, 2014.
